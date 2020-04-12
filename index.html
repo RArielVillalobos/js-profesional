@@ -31,11 +31,11 @@
 
       }
       MediaPlayer.prototype.play=function(){
-        video.play();
+        this.media.play();
         this.playing=true;
       }
       MediaPlayer.prototype.pausar=function(){
-        video.pause();
+        this.media.pause();
         this.playing=false;
       }
      const player=new MediaPlayer({element:video});
